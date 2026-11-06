@@ -53,3 +53,40 @@ cost in `moment_statevector.py`; tests should be run when changing conventions.
 
 The tighter exploratory budget 0.002 was stopped for computational cost
 before t=2; it is not the default or a demonstrated infeasibility result.
+
+## Nonlocal pool ablation
+
+Use `--mode baseline --pool nonlocal` to disable penalties and extend the
+45-generator original pool to 108 generators: single-qubit X/Y/Z plus
+XX/YY/ZZ on all unordered pairs. Original ordering is preserved, followed
+by non-nearest pairs. Default `--pool local` preserves the original pool.
+Raw CX counts assume arbitrary pair connectivity; line-coupling compilation
+must include routing and account for the compiler's final qubit permutation.
+
+## Rebuild every step
+
+`--rebuild-every-step` discards the candidate operator sequence and parameters
+at the start of each interval. It still freezes the previous accepted circuit
+and parameters in the one-step echo target. Candidate circuits prepare the
+state from the Neel product state, not by acting on the previous quantum state.
+This is not exact-state restarting. Use `--max-growth-rounds 100` for the
+rebuild experiments; the default remains 30 for the original protocol.
+All accepted local-cost gates are unchanged. More growth rounds/optimization
+work are permitted when required; compare their cost as well as accuracy.
+
+The matched rebuild ablation uses `--gradient-tolerance 0.00001` in all four
+inherited/rebuilt and local/nonlocal combinations. The initial rebuild trial
+at the default 5e-5 gradient tolerance failed its 100-growth-round cap at t=1.0
+(local cost 1.063229e-4). A small gradient does not by itself satisfy the
+local-loss acceptance threshold; the failed step was rejected, not committed.
+
+Saved comparisons and portable postprocessing scripts:
+
+- [Nonlocal pool without penalties](results/apvqd_nonlocal/REPORT.md)
+- [Per-step infidelities](results/apvqd_nonlocal/STEP_INFIDELITIES.md)
+- [Local/nonlocal residual correlations](results/apvqd_nonlocal/RESIDUAL_REPORT.md)
+- [Inherited versus rebuilt ansatz, matched gradient tolerance](results/apvqd_rebuild/REPORT.md)
+
+The shared `results/exact_reference_t2.npz` stores the independently validated
+continuous-time reference for postprocessing only. Postprocessing scripts
+resolve repository-relative paths and do not require the original workspace.

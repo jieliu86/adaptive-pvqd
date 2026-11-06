@@ -1,0 +1,24 @@
+{
+  "final_time": 2,
+  "global_infidelity": 0.01742114601063116,
+  "parameters": 232,
+  "raw_cx": 416,
+  "compiled_cx": 1064,
+  "compiled_depth": 961,
+  "compiler_infidelity": 4.884981308350689e-15,
+  "final_routing_mapping": [
+    4,
+    6,
+    5,
+    3,
+    7,
+    2,
+    0,
+    1
+  ],
+  "reference_max_error": 1.070521449264561e-11,
+  "nonlocal_rotations": 141,
+  "optimizer_iterations": 5202,
+  "pool_size": 108,
+  "penalty_enabled": false
+}

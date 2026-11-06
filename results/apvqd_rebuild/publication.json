@@ -1,0 +1,8 @@
+{
+  "postprocessing_scripts_sha256": {
+    "analyze.py": "1c3bce3516a136aca7d72a59ac1079366af9a1a248abd90b9ef3477da41302ac"
+  },
+  "path_adjustment": "Published postprocessing scripts resolve repository-relative data paths; original trajectories and numerical results are unchanged.",
+  "portable_postprocessing_checks": "passed using temporary copies",
+  "shared_reference": "../exact_reference_t2.npz"
+}

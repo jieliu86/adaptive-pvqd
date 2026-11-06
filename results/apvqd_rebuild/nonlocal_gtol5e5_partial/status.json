@@ -1,0 +1,5 @@
+{
+  "completed": false,
+  "last_accepted_time": 1.05,
+  "reason": "Interrupted to rerun all four protocols at matching tighter gradient tolerance after local rebuild failed."
+}

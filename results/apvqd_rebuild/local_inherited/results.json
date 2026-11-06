@@ -1,0 +1,1227 @@
+{
+  "settings": {
+    "mode": "baseline",
+    "pool": "local",
+    "rebuild_every_step": false,
+    "max_growth_rounds": 30,
+    "gradient_tolerance": 1e-05,
+    "out": "/workspace/experiments/apvqd-rebuild/local_inherited",
+    "budget": 0.02,
+    "weight": 0.01,
+    "dt": 0.05,
+    "end": 2,
+    "propagator": "midpoint Suzuki2 reps2",
+    "optimizer": "L-BFGS-B max200 per growth round",
+    "magnus_order": 5,
+    "qubits": 8,
+    "model_parameters": [
+      1,
+      0.8,
+      0.6,
+      0
+    ],
+    "initial_state": "Neel, X on odd sites",
+    "pool_size": 45,
+    "local_cost_threshold": 0.0001,
+    "constraint_polish": "SLSQP max200, ftol1e-12, margin1e-8"
+  },
+  "rows": [
+    {
+      "time": 0.05,
+      "residual_energy": 0.008831109123200453,
+      "residual_variance": 0.014573062632450284,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": 0.0,
+      "feasible": true,
+      "local_cost": 7.658221309922313e-05,
+      "energy": -0.49117409385498195,
+      "variance": 2.8495726852813155,
+      "global_infidelity": 0.00030309815240892046,
+      "parameters": 15,
+      "raw_cx": 18,
+      "rounds": 4,
+      "history": [
+        {
+          "iterations": 2,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 11,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 17,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3648
+    },
+    {
+      "time": 0.1,
+      "residual_energy": 0.008697956826272613,
+      "residual_variance": 0.014398748368037229,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": 0.0,
+      "feasible": true,
+      "local_cost": 1.2736783932525897e-05,
+      "energy": -0.4427645956572839,
+      "variance": 2.8453295366754503,
+      "global_infidelity": 0.00035493747669468334,
+      "parameters": 24,
+      "raw_cx": 32,
+      "rounds": 3,
+      "history": [
+        {
+          "iterations": 14,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 7,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 11,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.15000000000000002,
+      "residual_energy": 0.00940367479287213,
+      "residual_variance": 0.016848437900077062,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": 0.0,
+      "feasible": true,
+      "local_cost": 8.739671139649426e-05,
+      "energy": -0.39773470232308566,
+      "variance": 2.838499448074323,
+      "global_infidelity": 0.0009009091052556428,
+      "parameters": 24,
+      "raw_cx": 32,
+      "rounds": 1,
+      "history": [
+        {
+          "iterations": 21,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.2,
+      "residual_energy": 0.009848167054424206,
+      "residual_variance": 0.01812338723812612,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": 0.0,
+      "feasible": true,
+      "local_cost": 1.9726430547000677e-05,
+      "energy": -0.35949123953825124,
+      "variance": 2.8250048370544096,
+      "global_infidelity": 0.0011281126499734784,
+      "parameters": 33,
+      "raw_cx": 46,
+      "rounds": 3,
+      "history": [
+        {
+          "iterations": 9,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 27,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 38,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.25,
+      "residual_energy": 0.011029420617060248,
+      "residual_variance": 0.022413715282067592,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": 0.0,
+      "feasible": false,
+      "local_cost": 7.342281684344728e-05,
+      "energy": -0.32873224930748046,
+      "variance": 2.809834693366656,
+      "global_infidelity": 0.0020052171019496745,
+      "parameters": 33,
+      "raw_cx": 46,
+      "rounds": 1,
+      "history": [
+        {
+          "iterations": 33,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.3,
+      "residual_energy": 0.010360260442630165,
+      "residual_variance": 0.028010503113343965,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": 0.0,
+      "feasible": false,
+      "local_cost": 5.622920231915982e-05,
+      "energy": -0.30887912938584905,
+      "variance": 2.7936776528723,
+      "global_infidelity": 0.0024949363079413978,
+      "parameters": 38,
+      "raw_cx": 52,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 29,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 49,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.35000000000000003,
+      "residual_energy": 0.012196728946677782,
+      "residual_variance": 0.020859907024612045,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": 0.0,
+      "feasible": false,
+      "local_cost": 8.030547673738195e-05,
+      "energy": -0.2956377742425035,
+      "variance": 2.764811050069435,
+      "global_infidelity": 0.0036010082876783978,
+      "parameters": 46,
+      "raw_cx": 52,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 51,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 49,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.4,
+      "residual_energy": 0.013058735483926942,
+      "residual_variance": 0.01459227018287157,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": 0.0,
+      "feasible": true,
+      "local_cost": 5.380765175137935e-05,
+      "energy": -0.29168917032352587,
+      "variance": 2.739508481844716,
+      "global_infidelity": 0.004192647499953073,
+      "parameters": 54,
+      "raw_cx": 68,
+      "rounds": 3,
+      "history": [
+        {
+          "iterations": 45,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 62,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 38,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.45,
+      "residual_energy": 0.013495922109866165,
+      "residual_variance": 0.014314961559993566,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": 0.0,
+      "feasible": true,
+      "local_cost": 4.640867648239272e-06,
+      "energy": -0.29517342172140626,
+      "variance": 2.72607355269231,
+      "global_infidelity": 0.004257752386460534,
+      "parameters": 58,
+      "raw_cx": 76,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 65,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 127,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.5,
+      "residual_energy": 0.013993426581230262,
+      "residual_variance": 0.011960202025048883,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": 0.0,
+      "feasible": true,
+      "local_cost": 1.9052864376121257e-05,
+      "energy": -0.30383154131579626,
+      "variance": 2.718714521725492,
+      "global_infidelity": 0.004581064456170014,
+      "parameters": 58,
+      "raw_cx": 76,
+      "rounds": 1,
+      "history": [
+        {
+          "iterations": 115,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.55,
+      "residual_energy": 0.014800212251350808,
+      "residual_variance": 0.008239947112909096,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": 0.0,
+      "feasible": true,
+      "local_cost": 5.754833143290317e-05,
+      "energy": -0.315337903822829,
+      "variance": 2.721946014074195,
+      "global_infidelity": 0.00545034156872537,
+      "parameters": 58,
+      "raw_cx": 76,
+      "rounds": 1,
+      "history": [
+        {
+          "iterations": 93,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.6000000000000001,
+      "residual_energy": 0.015538627733194144,
+      "residual_variance": -0.005629215506552487,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 8.288726388152651e-05,
+      "energy": -0.3279971288823077,
+      "variance": 2.7306777647133034,
+      "global_infidelity": 0.006266727802382799,
+      "parameters": 63,
+      "raw_cx": 82,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 68,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 55,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.6500000000000001,
+      "residual_energy": 0.01601938402450842,
+      "residual_variance": -0.01611019497682964,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 4.141446233931239e-05,
+      "energy": -0.34022358952447285,
+      "variance": 2.760621781609763,
+      "global_infidelity": 0.006805409952713615,
+      "parameters": 75,
+      "raw_cx": 90,
+      "rounds": 3,
+      "history": [
+        {
+          "iterations": 43,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 37,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 82,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.7000000000000001,
+      "residual_energy": 0.016808017297768374,
+      "residual_variance": -0.03699607396470528,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": false,
+      "local_cost": 8.35728015379384e-05,
+      "energy": -0.34999364687012047,
+      "variance": 2.799119351343051,
+      "global_infidelity": 0.007896477663862034,
+      "parameters": 75,
+      "raw_cx": 90,
+      "rounds": 1,
+      "history": [
+        {
+          "iterations": 128,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.7500000000000001,
+      "residual_energy": 0.017033567505665037,
+      "residual_variance": -0.04264474725133205,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": false,
+      "local_cost": 6.489244769434762e-05,
+      "energy": -0.35721858960197456,
+      "variance": 2.8706172562878387,
+      "global_infidelity": 0.008701841080513195,
+      "parameters": 81,
+      "raw_cx": 94,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 97,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 56,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.8,
+      "residual_energy": 0.016640933504371125,
+      "residual_variance": -0.051652794884031294,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": false,
+      "local_cost": 6.989620055873928e-05,
+      "energy": -0.3615428354370417,
+      "variance": 2.9538788088587564,
+      "global_infidelity": 0.009719100788274537,
+      "parameters": 89,
+      "raw_cx": 110,
+      "rounds": 3,
+      "history": [
+        {
+          "iterations": 56,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 40,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 57,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.8500000000000001,
+      "residual_energy": 0.01660195149218674,
+      "residual_variance": -0.057091143722725946,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": false,
+      "local_cost": 1.944532958454104e-05,
+      "energy": -0.36210564598302314,
+      "variance": 3.051077574927025,
+      "global_infidelity": 0.010150541422564885,
+      "parameters": 93,
+      "raw_cx": 118,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 59,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 134,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.9000000000000001,
+      "residual_energy": 0.016646814556426748,
+      "residual_variance": -0.0742568448649803,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": false,
+      "local_cost": 5.87240610410092e-05,
+      "energy": -0.35963154941496417,
+      "variance": 3.1416672973505437,
+      "global_infidelity": 0.011299411933874737,
+      "parameters": 93,
+      "raw_cx": 118,
+      "rounds": 1,
+      "history": [
+        {
+          "iterations": 112,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.9500000000000001,
+      "residual_energy": 0.016565073650743556,
+      "residual_variance": -0.09976176459640751,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": false,
+      "local_cost": 8.260298384619461e-05,
+      "energy": -0.35509244411860535,
+      "variance": 3.2227293917117072,
+      "global_infidelity": 0.012812510212159012,
+      "parameters": 98,
+      "raw_cx": 124,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 89,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 84,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 1.0,
+      "residual_energy": 0.016607378137060258,
+      "residual_variance": -0.11653179622294019,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": false,
+      "local_cost": 9.625539185326231e-05,
+      "energy": -0.3490944928928549,
+      "variance": 3.3057224901640025,
+      "global_infidelity": 0.014568267400127954,
+      "parameters": 104,
+      "raw_cx": 128,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 68,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 156,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 1.05,
+      "residual_energy": 0.016496273624518665,
+      "residual_variance": -0.11677496938183918,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": false,
+      "local_cost": 1.4360944432471191e-05,
+      "energy": -0.34273232794167596,
+      "variance": 3.3947221744278253,
+      "global_infidelity": 0.01505990544780389,
+      "parameters": 114,
+      "raw_cx": 140,
+      "rounds": 3,
+      "history": [
+        {
+          "iterations": 143,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 121,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 95,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 1.1,
+      "residual_energy": 0.016544312602029432,
+      "residual_variance": -0.11890916014558295,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": false,
+      "local_cost": 3.90170033435973e-05,
+      "energy": -0.33636207015196423,
+      "variance": 3.4689897306385213,
+      "global_infidelity": 0.016128472039462327,
+      "parameters": 114,
+      "raw_cx": 140,
+      "rounds": 1,
+      "history": [
+        {
+          "iterations": 77,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 1.1500000000000001,
+      "residual_energy": 0.016227079803713185,
+      "residual_variance": -0.12470180276029508,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": false,
+      "local_cost": 8.423497989963413e-05,
+      "energy": -0.33103357535098993,
+      "variance": 3.525030269879361,
+      "global_infidelity": 0.017912278966451867,
+      "parameters": 114,
+      "raw_cx": 140,
+      "rounds": 1,
+      "history": [
+        {
+          "iterations": 100,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 1.2000000000000002,
+      "residual_energy": 0.015623007192802463,
+      "residual_variance": -0.13618332953396095,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": false,
+      "local_cost": 9.473757544610812e-05,
+      "energy": -0.3269987492355388,
+      "variance": 3.5606938935493115,
+      "global_infidelity": 0.019467051706063332,
+      "parameters": 124,
+      "raw_cx": 152,
+      "rounds": 3,
+      "history": [
+        {
+          "iterations": 75,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 131,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 161,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 1.2500000000000002,
+      "residual_energy": 0.015645647392280193,
+      "residual_variance": -0.15174037840150145,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": false,
+      "local_cost": 7.31913102714718e-05,
+      "energy": -0.3234568436913826,
+      "variance": 3.5790409033034507,
+      "global_infidelity": 0.02076951732868959,
+      "parameters": 128,
+      "raw_cx": 160,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 75,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 100,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 1.3,
+      "residual_energy": 0.015942446247120323,
+      "residual_variance": -0.15810120967831987,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": false,
+      "local_cost": 7.70149600803458e-05,
+      "energy": -0.3207048111248484,
+      "variance": 3.595656242361433,
+      "global_infidelity": 0.022059554323879182,
+      "parameters": 133,
+      "raw_cx": 166,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 76,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 136,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 1.35,
+      "residual_energy": 0.015494000985737721,
+      "residual_variance": -0.1534255697625757,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": false,
+      "local_cost": 4.300119796801144e-05,
+      "energy": -0.3196196639328267,
+      "variance": 3.6151957199630953,
+      "global_infidelity": 0.022887765270002802,
+      "parameters": 138,
+      "raw_cx": 172,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 72,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 87,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 1.4000000000000001,
+      "residual_energy": 0.015034301199833178,
+      "residual_variance": -0.15244077007883705,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": false,
+      "local_cost": 8.583394238261835e-05,
+      "energy": -0.31926791313651387,
+      "variance": 3.625735846088862,
+      "global_infidelity": 0.024425620790571534,
+      "parameters": 138,
+      "raw_cx": 172,
+      "rounds": 1,
+      "history": [
+        {
+          "iterations": 69,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3736
+    },
+    {
+      "time": 1.4500000000000002,
+      "residual_energy": 0.014202985916587196,
+      "residual_variance": -0.1441174594794279,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": false,
+      "local_cost": 6.824505809287524e-05,
+      "energy": -0.31977911567247264,
+      "variance": 3.640557884799456,
+      "global_infidelity": 0.025289321370840168,
+      "parameters": 143,
+      "raw_cx": 178,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 71,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 73,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3581
+    },
+    {
+      "time": 1.5000000000000002,
+      "residual_energy": 0.014220654642618014,
+      "residual_variance": -0.14594841543807657,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": false,
+      "local_cost": 3.4508319939207894e-05,
+      "energy": -0.31971642714169624,
+      "variance": 3.6435642432066286,
+      "global_infidelity": 0.025887185939859725,
+      "parameters": 149,
+      "raw_cx": 182,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 66,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 79,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3326
+    },
+    {
+      "time": 1.55,
+      "residual_energy": 0.014433441024490623,
+      "residual_variance": -0.1509086805820785,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": false,
+      "local_cost": 8.47385052072191e-05,
+      "energy": -0.3195551703367384,
+      "variance": 3.6421136545663426,
+      "global_infidelity": 0.027192467693496147,
+      "parameters": 149,
+      "raw_cx": 182,
+      "rounds": 1,
+      "history": [
+        {
+          "iterations": 91,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 2996
+    },
+    {
+      "time": 1.6,
+      "residual_energy": 0.014848398253265283,
+      "residual_variance": -0.15784368138066496,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": false,
+      "local_cost": 8.072190382847734e-05,
+      "energy": -0.3191676309963066,
+      "variance": 3.6364941930925463,
+      "global_infidelity": 0.028499630569249534,
+      "parameters": 157,
+      "raw_cx": 198,
+      "rounds": 3,
+      "history": [
+        {
+          "iterations": 98,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 167,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 65,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 2820
+    },
+    {
+      "time": 1.6500000000000001,
+      "residual_energy": 0.015053649940399927,
+      "residual_variance": -0.1617283537537353,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": false,
+      "local_cost": 8.938161124792912e-05,
+      "energy": -0.3189191213692594,
+      "variance": 3.6299099191952875,
+      "global_infidelity": 0.030223945568320643,
+      "parameters": 163,
+      "raw_cx": 202,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 175,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 84,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 2996
+    },
+    {
+      "time": 1.7000000000000002,
+      "residual_energy": 0.015017030772636664,
+      "residual_variance": -0.16516495561432842,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": false,
+      "local_cost": 4.172640782489369e-05,
+      "energy": -0.31886827217244396,
+      "variance": 3.6173765938876636,
+      "global_infidelity": 0.03123637101032195,
+      "parameters": 168,
+      "raw_cx": 208,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 173,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 175,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3326
+    },
+    {
+      "time": 1.7500000000000002,
+      "residual_energy": 0.014898696430841185,
+      "residual_variance": -0.16967573055986618,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": false,
+      "local_cost": 8.267229652620153e-05,
+      "energy": -0.3189382968081919,
+      "variance": 3.594956520353059,
+      "global_infidelity": 0.033201351670317236,
+      "parameters": 168,
+      "raw_cx": 208,
+      "rounds": 1,
+      "history": [
+        {
+          "iterations": 104,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3696
+    },
+    {
+      "time": 1.8,
+      "residual_energy": 0.014500773148103385,
+      "residual_variance": -0.17306298315695257,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": false,
+      "local_cost": 9.26097701845557e-05,
+      "energy": -0.3194408052711044,
+      "variance": 3.5629382613990077,
+      "global_infidelity": 0.03545128750743287,
+      "parameters": 173,
+      "raw_cx": 214,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 167,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 79,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3736
+    },
+    {
+      "time": 1.85,
+      "residual_energy": 0.014123604069333828,
+      "residual_variance": -0.17291049249211365,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": false,
+      "local_cost": 9.441864097732114e-05,
+      "energy": -0.32018797727137266,
+      "variance": 3.5227853112048937,
+      "global_infidelity": 0.03744218501445051,
+      "parameters": 178,
+      "raw_cx": 220,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 173,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 153,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 1.9000000000000001,
+      "residual_energy": 0.014261764453634529,
+      "residual_variance": -0.16998510115248244,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": false,
+      "local_cost": 8.239238444554706e-05,
+      "energy": -0.32077179290515667,
+      "variance": 3.473901337944808,
+      "global_infidelity": 0.03899772675494928,
+      "parameters": 184,
+      "raw_cx": 224,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 102,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 118,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 1.9500000000000002,
+      "residual_energy": 0.014160523070534614,
+      "residual_variance": -0.16796877149825962,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": false,
+      "local_cost": 5.507381067294472e-05,
+      "energy": -0.3219914867817152,
+      "variance": 3.4141127367603405,
+      "global_infidelity": 0.03986410868503465,
+      "parameters": 192,
+      "raw_cx": 240,
+      "rounds": 3,
+      "history": [
+        {
+          "iterations": 88,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 117,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 102,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 2.0,
+      "residual_energy": 0.014269743041615768,
+      "residual_variance": -0.1759264995877139,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": false,
+      "local_cost": 2.050830553075279e-05,
+      "energy": -0.3234115968997083,
+      "variance": 3.33716082019517,
+      "global_infidelity": 0.040343665681903174,
+      "parameters": 198,
+      "raw_cx": 244,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 100,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 146,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    }
+  ],
+  "failure": null,
+  "elapsed": 59.60171318054199
+}

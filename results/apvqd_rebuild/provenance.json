@@ -1,0 +1,29 @@
+{
+  "repository_head": "6a4a3d642d91789e135f76c19b61f195fcb28597",
+  "source_sha256": {
+    "run_moment_apvqd.py": "ec80f6ab807da24a5e0615ba307cd00a54926d548686e71fe65008c08cdf089c",
+    "moment_statevector.py": "736144e75c9a56741bac55e092b276bf4aceb782589f954761c7c85d63eb14cf",
+    "moment_constraints.py": "906c4268180b2a43a919081f08f8294f11ed61a5a89fb75437055495e4836420",
+    "analyze_moment_apvqd.py": "f0323f5812b6764356166be771dfadb6c2d47734bb057c1d9522f1704df71b96"
+  },
+  "end": 2,
+  "dt": 0.05,
+  "gradient_tolerance": 1e-05,
+  "growth_round_cap": {
+    "inherited": 30,
+    "rebuilt": 100
+  },
+  "max_LBFGS_iterations_per_growth_round": 200,
+  "penalty": false,
+  "backend": "exact statevector adjoint; no shots",
+  "reference": "independent DOP853, reporting only",
+  "rebuild": "each candidate starts from Neel, empty sequence, zero parameters; old accepted circuit remains frozen in echo target; no exact-state restart",
+  "direct_midpoint_Suzuki_infidelity_to_exact_t2": 7.0339853984746625e-06,
+  "analysis_source_sha256": "43a00d63f12d66f59d2e32d721c8438e8d5744e0ca057d304157eacf9568742f",
+  "completed_cases": {
+    "local": true,
+    "nonlocal": true,
+    "local_inherited": true,
+    "nonlocal_inherited": true
+  }
+}

@@ -1,0 +1,486 @@
+{
+  "local": [
+    {
+      "time": 0.05,
+      "step_infidelity": 0.0003070400674236584,
+      "global_infidelity": 0.00030404283045171177,
+      "local_cost": 7.689418770015913e-05
+    },
+    {
+      "time": 0.1,
+      "step_infidelity": 4.134169152436584e-05,
+      "global_infidelity": 0.0003505463373781881,
+      "local_cost": 1.282523998609249e-05
+    },
+    {
+      "time": 0.15000000000000002,
+      "step_infidelity": 0.00028767435125331975,
+      "global_infidelity": 0.000896335306555196,
+      "local_cost": 8.812243506898058e-05
+    },
+    {
+      "time": 0.2,
+      "step_infidelity": 9.391887812648658e-05,
+      "global_infidelity": 0.001204821990224647,
+      "local_cost": 2.46039247066477e-05
+    },
+    {
+      "time": 0.25,
+      "step_infidelity": 0.00027066053650404154,
+      "global_infidelity": 0.0020693147880807006,
+      "local_cost": 7.319651482659788e-05
+    },
+    {
+      "time": 0.3,
+      "step_infidelity": 0.00020211714137963188,
+      "global_infidelity": 0.0025583797774648698,
+      "local_cost": 5.729060011128936e-05
+    },
+    {
+      "time": 0.35000000000000003,
+      "step_infidelity": 0.00023464866270306306,
+      "global_infidelity": 0.0036428803988324265,
+      "local_cost": 8.037267502531938e-05
+    },
+    {
+      "time": 0.4,
+      "step_infidelity": 0.00015947444338781924,
+      "global_infidelity": 0.004544643929692116,
+      "local_cost": 6.308104041570423e-05
+    },
+    {
+      "time": 0.45,
+      "step_infidelity": 2.2326014796458793e-05,
+      "global_infidelity": 0.004847601558383707,
+      "local_cost": 9.12664626458071e-06
+    },
+    {
+      "time": 0.5,
+      "step_infidelity": 4.3005136269869126e-05,
+      "global_infidelity": 0.0051552823559727345,
+      "local_cost": 1.9274006787972696e-05
+    },
+    {
+      "time": 0.55,
+      "step_infidelity": 0.00015978059073251671,
+      "global_infidelity": 0.006207689730949872,
+      "local_cost": 6.258229996949013e-05
+    },
+    {
+      "time": 0.6000000000000001,
+      "step_infidelity": 0.0002252369662795184,
+      "global_infidelity": 0.0072977995706924315,
+      "local_cost": 9.516909690187003e-05
+    },
+    {
+      "time": 0.6500000000000001,
+      "step_infidelity": 9.737085265326684e-05,
+      "global_infidelity": 0.007764148009433369,
+      "local_cost": 4.108102797542666e-05
+    },
+    {
+      "time": 0.7000000000000001,
+      "step_infidelity": 0.00017309359695483195,
+      "global_infidelity": 0.008707406658325034,
+      "local_cost": 7.221953764385269e-05
+    },
+    {
+      "time": 0.7500000000000001,
+      "step_infidelity": 0.00011965959406567972,
+      "global_infidelity": 0.009484470874071116,
+      "local_cost": 5.10782300979415e-05
+    },
+    {
+      "time": 0.8,
+      "step_infidelity": 0.00023671919811363296,
+      "global_infidelity": 0.010955058816500052,
+      "local_cost": 9.928475498508695e-05
+    },
+    {
+      "time": 0.8500000000000001,
+      "step_infidelity": 6.25988914305653e-05,
+      "global_infidelity": 0.011309872546486965,
+      "local_cost": 2.8282498990418366e-05
+    },
+    {
+      "time": 0.9000000000000001,
+      "step_infidelity": 0.00016665465003262714,
+      "global_infidelity": 0.012482151027914612,
+      "local_cost": 7.696867643953249e-05
+    },
+    {
+      "time": 0.9500000000000001,
+      "step_infidelity": 0.00016751614069132614,
+      "global_infidelity": 0.013982017033971728,
+      "local_cost": 6.799303613793262e-05
+    },
+    {
+      "time": 1.0,
+      "step_infidelity": 0.00022213725722586286,
+      "global_infidelity": 0.015867446677497177,
+      "local_cost": 8.893023841744473e-05
+    },
+    {
+      "time": 1.05,
+      "step_infidelity": 0.00015770348649224442,
+      "global_infidelity": 0.01730474115811098,
+      "local_cost": 6.697605040203636e-05
+    },
+    {
+      "time": 1.1,
+      "step_infidelity": 8.886137689112505e-05,
+      "global_infidelity": 0.018341646211184837,
+      "local_cost": 3.906190944800879e-05
+    },
+    {
+      "time": 1.1500000000000001,
+      "step_infidelity": 0.00021180105538465277,
+      "global_infidelity": 0.02040506516570184,
+      "local_cost": 9.42583863560848e-05
+    },
+    {
+      "time": 1.2000000000000002,
+      "step_infidelity": 0.00016697723204905923,
+      "global_infidelity": 0.02193194797429243,
+      "local_cost": 8.031520348127775e-05
+    },
+    {
+      "time": 1.2500000000000002,
+      "step_infidelity": 0.0001745961539743046,
+      "global_infidelity": 0.023324669071586146,
+      "local_cost": 8.358599517764176e-05
+    },
+    {
+      "time": 1.3,
+      "step_infidelity": 5.908948155153304e-05,
+      "global_infidelity": 0.0238062261365779,
+      "local_cost": 2.774955731083774e-05
+    },
+    {
+      "time": 1.35,
+      "step_infidelity": 0.00014017930664977918,
+      "global_infidelity": 0.0253293444227094,
+      "local_cost": 6.519892266579997e-05
+    },
+    {
+      "time": 1.4000000000000001,
+      "step_infidelity": 0.00018810991591533543,
+      "global_infidelity": 0.027234261116660163,
+      "local_cost": 8.52041394201212e-05
+    },
+    {
+      "time": 1.4500000000000002,
+      "step_infidelity": 0.0001027205468937531,
+      "global_infidelity": 0.02858585080422682,
+      "local_cost": 5.128155162789122e-05
+    },
+    {
+      "time": 1.5000000000000002,
+      "step_infidelity": 0.00019765822937845012,
+      "global_infidelity": 0.030864224516009675,
+      "local_cost": 9.6160755914725e-05
+    },
+    {
+      "time": 1.55,
+      "step_infidelity": 8.817232667457375e-05,
+      "global_infidelity": 0.031729364368616064,
+      "local_cost": 3.9659930822604305e-05
+    },
+    {
+      "time": 1.6,
+      "step_infidelity": 0.00018350724218452186,
+      "global_infidelity": 0.03349316842407324,
+      "local_cost": 8.444776305939735e-05
+    },
+    {
+      "time": 1.6500000000000001,
+      "step_infidelity": 0.00011958888913921051,
+      "global_infidelity": 0.0345446124801051,
+      "local_cost": 5.477605155880787e-05
+    },
+    {
+      "time": 1.7000000000000002,
+      "step_infidelity": 0.00020486894270843603,
+      "global_infidelity": 0.036285277610867306,
+      "local_cost": 9.267432858282246e-05
+    },
+    {
+      "time": 1.7500000000000002,
+      "step_infidelity": 9.548512293122702e-05,
+      "global_infidelity": 0.03718786760092352,
+      "local_cost": 4.442453335223143e-05
+    },
+    {
+      "time": 1.8,
+      "step_infidelity": 0.0001784904544077648,
+      "global_infidelity": 0.039219634552277616,
+      "local_cost": 8.171713885295616e-05
+    },
+    {
+      "time": 1.85,
+      "step_infidelity": 0.00013523319826336255,
+      "global_infidelity": 0.040847674433940884,
+      "local_cost": 6.198638504574643e-05
+    },
+    {
+      "time": 1.9000000000000001,
+      "step_infidelity": 0.00015708234753430972,
+      "global_infidelity": 0.042544289543701486,
+      "local_cost": 7.302522843583883e-05
+    },
+    {
+      "time": 1.9500000000000002,
+      "step_infidelity": 4.240866639093621e-05,
+      "global_infidelity": 0.043082931961038406,
+      "local_cost": 2.0964806705499125e-05
+    },
+    {
+      "time": 2.0,
+      "step_infidelity": 9.208505002233913e-05,
+      "global_infidelity": 0.0443409888215599,
+      "local_cost": 4.4108271753026005e-05
+    }
+  ],
+  "nonlocal": [
+    {
+      "time": 0.05,
+      "step_infidelity": 0.0003594785004629175,
+      "global_infidelity": 0.0003577088953019558,
+      "local_cost": 9.052215177327617e-05
+    },
+    {
+      "time": 0.1,
+      "step_infidelity": 6.76504820649182e-05,
+      "global_infidelity": 0.00045787589882428925,
+      "local_cost": 2.306135993679541e-05
+    },
+    {
+      "time": 0.15000000000000002,
+      "step_infidelity": 0.00013165131235182148,
+      "global_infidelity": 0.0006982839094663573,
+      "local_cost": 4.8036306239170015e-05
+    },
+    {
+      "time": 0.2,
+      "step_infidelity": 0.00023224157852519411,
+      "global_infidelity": 0.0012586238217259238,
+      "local_cost": 7.695266408599345e-05
+    },
+    {
+      "time": 0.25,
+      "step_infidelity": 0.0002634883934384824,
+      "global_infidelity": 0.002038682992774654,
+      "local_cost": 9.16075362938003e-05
+    },
+    {
+      "time": 0.3,
+      "step_infidelity": 0.00020651754193823368,
+      "global_infidelity": 0.002252809865478156,
+      "local_cost": 8.134817185785574e-05
+    },
+    {
+      "time": 0.35000000000000003,
+      "step_infidelity": 0.00023374648825169597,
+      "global_infidelity": 0.0029519718515415017,
+      "local_cost": 7.884033693646665e-05
+    },
+    {
+      "time": 0.4,
+      "step_infidelity": 0.00017244379012737454,
+      "global_infidelity": 0.00342102282727319,
+      "local_cost": 6.265911796827072e-05
+    },
+    {
+      "time": 0.45,
+      "step_infidelity": 0.00020345246964392771,
+      "global_infidelity": 0.004263809984044076,
+      "local_cost": 7.846373041753215e-05
+    },
+    {
+      "time": 0.5,
+      "step_infidelity": 0.0001661100335380583,
+      "global_infidelity": 0.005084956971772248,
+      "local_cost": 6.894524366872223e-05
+    },
+    {
+      "time": 0.55,
+      "step_infidelity": 0.00013901744218636214,
+      "global_infidelity": 0.0055163315599363605,
+      "local_cost": 5.534557124140615e-05
+    },
+    {
+      "time": 0.6000000000000001,
+      "step_infidelity": 0.000146051493823518,
+      "global_infidelity": 0.0061258651585403,
+      "local_cost": 6.206265628768461e-05
+    },
+    {
+      "time": 0.6500000000000001,
+      "step_infidelity": 0.00018529242049269978,
+      "global_infidelity": 0.006835895632708255,
+      "local_cost": 7.627548933164086e-05
+    },
+    {
+      "time": 0.7000000000000001,
+      "step_infidelity": 0.000162086693769381,
+      "global_infidelity": 0.007426042595644611,
+      "local_cost": 6.51690347503758e-05
+    },
+    {
+      "time": 0.7500000000000001,
+      "step_infidelity": 0.00021906549540151588,
+      "global_infidelity": 0.008224662254116888,
+      "local_cost": 9.24599006064113e-05
+    },
+    {
+      "time": 0.8,
+      "step_infidelity": 0.00013009466443059114,
+      "global_infidelity": 0.008676256267097227,
+      "local_cost": 5.7644684261996286e-05
+    },
+    {
+      "time": 0.8500000000000001,
+      "step_infidelity": 0.00022885713686460196,
+      "global_infidelity": 0.009583152699068287,
+      "local_cost": 9.978373122649032e-05
+    },
+    {
+      "time": 0.9000000000000001,
+      "step_infidelity": 0.00017251741558754752,
+      "global_infidelity": 0.010450358730267562,
+      "local_cost": 7.416013960101507e-05
+    },
+    {
+      "time": 0.9500000000000001,
+      "step_infidelity": 0.00023529703148505998,
+      "global_infidelity": 0.011880507428489118,
+      "local_cost": 9.587878162085768e-05
+    },
+    {
+      "time": 1.0,
+      "step_infidelity": 0.0001859030265409789,
+      "global_infidelity": 0.013205624859412901,
+      "local_cost": 8.321691243039018e-05
+    },
+    {
+      "time": 1.05,
+      "step_infidelity": 0.00017382160575984962,
+      "global_infidelity": 0.013969254260756236,
+      "local_cost": 8.35793930952802e-05
+    },
+    {
+      "time": 1.1,
+      "step_infidelity": 0.0001323975307921943,
+      "global_infidelity": 0.014506011753829928,
+      "local_cost": 6.497261813035658e-05
+    },
+    {
+      "time": 1.1500000000000001,
+      "step_infidelity": 0.00016787884671065623,
+      "global_infidelity": 0.014976460459520613,
+      "local_cost": 7.6232482823568e-05
+    },
+    {
+      "time": 1.2000000000000002,
+      "step_infidelity": 0.00017308934608950555,
+      "global_infidelity": 0.015289627197297428,
+      "local_cost": 8.191125840952362e-05
+    },
+    {
+      "time": 1.2500000000000002,
+      "step_infidelity": 0.00014151429504827284,
+      "global_infidelity": 0.015298387003044978,
+      "local_cost": 6.627768326980852e-05
+    },
+    {
+      "time": 1.3,
+      "step_infidelity": 0.00015420648845854146,
+      "global_infidelity": 0.015709724999866004,
+      "local_cost": 6.563100349835929e-05
+    },
+    {
+      "time": 1.35,
+      "step_infidelity": 0.00018518057818228684,
+      "global_infidelity": 0.016259143465796266,
+      "local_cost": 7.626830897930663e-05
+    },
+    {
+      "time": 1.4000000000000001,
+      "step_infidelity": 0.0002282976583043439,
+      "global_infidelity": 0.016976935788124425,
+      "local_cost": 9.597144350000489e-05
+    },
+    {
+      "time": 1.4500000000000002,
+      "step_infidelity": 7.57014772352349e-05,
+      "global_infidelity": 0.016941935755649618,
+      "local_cost": 3.137657650896657e-05
+    },
+    {
+      "time": 1.5000000000000002,
+      "step_infidelity": 7.659071768850723e-05,
+      "global_infidelity": 0.01712641495916367,
+      "local_cost": 2.8143898912599546e-05
+    },
+    {
+      "time": 1.55,
+      "step_infidelity": 2.584606328071004e-05,
+      "global_infidelity": 0.01706715194747621,
+      "local_cost": 9.317854682663116e-06
+    },
+    {
+      "time": 1.6,
+      "step_infidelity": 0.0001907960468319203,
+      "global_infidelity": 0.01717663340264941,
+      "local_cost": 7.855045627048347e-05
+    },
+    {
+      "time": 1.6500000000000001,
+      "step_infidelity": 9.454671276198923e-05,
+      "global_infidelity": 0.01735325822888778,
+      "local_cost": 3.970210699947286e-05
+    },
+    {
+      "time": 1.7000000000000002,
+      "step_infidelity": 4.919371957423646e-05,
+      "global_infidelity": 0.017471987895014363,
+      "local_cost": 1.961749959111179e-05
+    },
+    {
+      "time": 1.7500000000000002,
+      "step_infidelity": 0.00017968455873040856,
+      "global_infidelity": 0.017491964843470154,
+      "local_cost": 7.150142834363109e-05
+    },
+    {
+      "time": 1.8,
+      "step_infidelity": 9.564612252210836e-06,
+      "global_infidelity": 0.017483401685342015,
+      "local_cost": 3.985081041098655e-06
+    },
+    {
+      "time": 1.85,
+      "step_infidelity": 8.901863988708403e-05,
+      "global_infidelity": 0.017733845461564424,
+      "local_cost": 3.4594376510744255e-05
+    },
+    {
+      "time": 1.9000000000000001,
+      "step_infidelity": 0.000162098244473885,
+      "global_infidelity": 0.017516243087653427,
+      "local_cost": 6.208652197737384e-05
+    },
+    {
+      "time": 1.9500000000000002,
+      "step_infidelity": 5.4860362630027026e-05,
+      "global_infidelity": 0.01727846166144864,
+      "local_cost": 2.1063581795980375e-05
+    },
+    {
+      "time": 2.0,
+      "step_infidelity": 3.0604733419536956e-05,
+      "global_infidelity": 0.01742114601063116,
+      "local_cost": 1.0258889227760726e-05
+    }
+  ]
+}

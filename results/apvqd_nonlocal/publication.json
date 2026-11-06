@@ -1,0 +1,10 @@
+{
+  "postprocessing_scripts_sha256": {
+    "report.py": "df0d6cdc7253cca574cdf40e6ea8877fe219c2c516752e0659927816c4b9087e",
+    "step_infidelities.py": "6c8fec4f9e32f090724dcff52b3f5684fc1b506ce6733599c4c082077d732ab1",
+    "residual_comparison.py": "f7d0aaf3a62354c079325140015fb67199518c5ed9c2630f7ce1601196c38d8d"
+  },
+  "path_adjustment": "Published postprocessing scripts resolve repository-relative data paths; original trajectories and numerical results are unchanged.",
+  "portable_postprocessing_checks": "passed using temporary copies",
+  "shared_reference": "../exact_reference_t2.npz"
+}

@@ -74,10 +74,22 @@ class Objective:
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--mode',choices=['baseline','penalty'],required=True)
+    parser.add_argument('--pool',choices=['local','nonlocal'],default='local')
+    parser.add_argument('--rebuild-every-step',action='store_true')
+    parser.add_argument('--max-growth-rounds',type=int,default=30)
+    parser.add_argument('--gradient-tolerance',type=float,default=5e-5)
     parser.add_argument('--out',type=Path,required=True)
     parser.add_argument('--budget',type=float,default=.02)
     parser.add_argument('--weight',type=float,default=.01)
-    args=parser.parse_args();args.out.mkdir(parents=True,exist_ok=True)
+    args=parser.parse_args()
+    if args.max_growth_rounds < 1:
+        parser.error('--max-growth-rounds must be positive')
+    args.out.mkdir(parents=True,exist_ok=True)
+    operator_pool=list(pool)
+    if args.pool=='nonlocal':
+        # Preserve original pool ordering, then append longer-range pairs.
+        operator_pool += [(a,[i,j]) for a in ['xx','yy','zz']
+                          for i in range(N) for j in range(i+2,N)]
     H=lambda t:xyz_floquet_hamiltonian(N,[1,.8,.6,0],t)
     ctl=MomentController(args.budget,args.budget,args.weight if args.mode=='penalty' else 0.,args.weight if args.mode=='penalty' else 0.)
     times=np.linspace(0,2,41)
@@ -90,12 +102,14 @@ def main():
         eP,eT,_=evolution(t+.025)
         local=LocalLoss(list(ops),theta,eP,eT)
         inp=moments(K,v)
-        trialops=list(ops);trialtheta=theta.copy();history=[]
+        trialops=[] if args.rebuild_every_step else list(ops)
+        trialtheta=np.zeros(0) if args.rebuild_every_step else theta.copy()
+        history=[]
         accepted=False
-        for rnd in range(30):
+        for rnd in range(args.max_growth_rounds):
             obj=Objective(local,trialops,K,ctl,inp)
             if len(trialtheta):
-                result=minimize(lambda x:obj.evaluate(x)[:2],trialtheta,jac=True,method='L-BFGS-B',options=dict(maxiter=200,gtol=5e-5,ftol=1e-13,maxls=30))
+                result=minimize(lambda x:obj.evaluate(x)[:2],trialtheta,jac=True,method='L-BFGS-B',options=dict(maxiter=200,gtol=args.gradient_tolerance,ftol=1e-13,maxls=30))
                 trialtheta=result.x
                 history.append(dict(iterations=int(result.nit),success=bool(result.success),message=str(result.message)))
             value,g,d,newv,back=obj.evaluate(trialtheta)
@@ -120,15 +134,15 @@ def main():
             accepted=d['local_cost']<=1e-4 and (args.mode=='baseline' or d['feasible'])
             if accepted:break
             # Candidate gradients of the complete nonlinear objective.
-            scores=[abs(2*np.real(np.vdot(back,-.5j*pauli(*op)(newv)))) for op in pool]
-            remaining=list(range(len(pool)));selected=[]
+            scores=[abs(2*np.real(np.vdot(back,-.5j*pauli(*op)(newv)))) for op in operator_pool]
+            remaining=list(range(len(operator_pool)));selected=[]
             while remaining:
                 k=max(remaining,key=lambda j:scores[j]);selected.append(k)
-                remaining=[j for j in remaining if set(pool[k][1]).isdisjoint(pool[j][1])]
-            selected.sort(key=lambda k:pool[k][1][0])
-            trialops.extend(pool[k] for k in selected);trialtheta=np.r_[trialtheta,np.zeros(len(selected))]
+                remaining=[j for j in remaining if set(operator_pool[k][1]).isdisjoint(operator_pool[j][1])]
+            selected.sort(key=lambda k:operator_pool[k][1][0])
+            trialops.extend(operator_pool[k] for k in selected);trialtheta=np.r_[trialtheta,np.zeros(len(selected))]
         if not accepted:
-            failure=dict(time=float(t+.05),diagnostics=d,reason='30 growth rounds exhausted; candidate rejected')
+            failure=dict(time=float(t+.05),diagnostics=d,reason=f'{args.max_growth_rounds} growth rounds exhausted; candidate rejected')
             break
         # Commit only after all acceptance gates; baseline records signed sums without enforcing them.
         if args.mode=='penalty':ctl.commit(d)
@@ -142,7 +156,7 @@ def main():
         row=dict(time=float(t+.05),**d,global_infidelity=float(1-abs(np.vdot(ref.y[:,n+1],v))**2),parameters=len(theta),raw_cx=2*sum(len(q)==2 for _,q in ops),rounds=rnd+1,history=history,K_terms=len(Kop.primitive),K2_terms=len((Kop@Kop).reduce(atol=1e-12).primitive))
         rows.append(row)
         np.savez(args.out/'trajectory.npz',times=times[:len(states)],states=np.array(states),parameters=theta)
-        (args.out/'results.json').write_text(json.dumps(dict(settings=vars(args)|{'out':str(args.out),'dt':.05,'end':2,'propagator':'midpoint Suzuki2 reps2','optimizer':'L-BFGS-B max200 per growth round','magnus_order':5,'qubits':N,'model_parameters':[1,.8,.6,0],'initial_state':'Neel, X on odd sites','pool':'x/y/z and adjacent xx/yy/zz','local_cost_threshold':1e-4,'max_growth_rounds':30,'constraint_polish':'SLSQP max200, ftol1e-12, margin1e-8'},rows=rows,failure=failure,elapsed=time.time()-start),indent=2))
+        (args.out/'results.json').write_text(json.dumps(dict(settings=vars(args)|{'out':str(args.out),'dt':.05,'end':2,'propagator':'midpoint Suzuki2 reps2','optimizer':'L-BFGS-B max200 per growth round','magnus_order':5,'qubits':N,'model_parameters':[1,.8,.6,0],'initial_state':'Neel, X on odd sites','pool':args.pool,'pool_size':len(operator_pool),'local_cost_threshold':1e-4,'max_growth_rounds':args.max_growth_rounds,'constraint_polish':'SLSQP max200, ftol1e-12, margin1e-8'},rows=rows,failure=failure,elapsed=time.time()-start),indent=2))
         print(args.mode,round(t+.05,2),row['global_infidelity'],len(theta),d['residual_energy'],d['residual_variance'],flush=True)
     (args.out/'status.json').write_text(json.dumps(dict(completed=len(rows)==40,failure=failure),indent=2))
     # Save executable final circuit and parameterized topology independently of experiment paths.

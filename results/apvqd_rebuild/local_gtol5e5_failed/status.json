@@ -1,0 +1,18 @@
+{
+  "completed": false,
+  "failure": {
+    "time": 1.0,
+    "diagnostics": {
+      "residual_energy": 0.016874931642545055,
+      "residual_variance": 0.005562111016659266,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": 0.0,
+      "feasible": true,
+      "local_cost": 0.00010632293891686887,
+      "energy": -0.34547374205833203,
+      "variance": 3.447016497889229
+    },
+    "reason": "100 growth rounds exhausted; candidate rejected"
+  }
+}
