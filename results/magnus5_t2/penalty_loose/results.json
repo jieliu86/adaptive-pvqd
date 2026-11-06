@@ -1,0 +1,1454 @@
+{
+  "settings": {
+    "mode": "penalty",
+    "out": "/workspace/experiments/apvqd-magnus5/penalty_loose",
+    "budget": 0.02,
+    "weight": 0.01,
+    "dt": 0.05,
+    "end": 2,
+    "propagator": "midpoint Suzuki2 reps2",
+    "optimizer": "L-BFGS-B max200 per growth round",
+    "magnus_order": 5,
+    "qubits": 8,
+    "model_parameters": [
+      1,
+      0.8,
+      0.6,
+      0
+    ],
+    "initial_state": "Neel, X on odd sites",
+    "pool": "x/y/z and adjacent xx/yy/zz",
+    "local_cost_threshold": 0.0001,
+    "max_growth_rounds": 30,
+    "constraint_polish": "SLSQP max200, ftol1e-12, margin1e-8"
+  },
+  "rows": [
+    {
+      "time": 0.05,
+      "residual_energy": 0.009775824367715624,
+      "residual_variance": 0.015923680934669004,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": 0.0,
+      "feasible": true,
+      "local_cost": 7.693824154575646e-05,
+      "energy": -0.4902293786104668,
+      "variance": 2.850923303583534,
+      "global_infidelity": 0.0003042173479700372,
+      "parameters": 15,
+      "raw_cx": 18,
+      "rounds": 4,
+      "history": [
+        {
+          "iterations": 2,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 7,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 8,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3648
+    },
+    {
+      "time": 0.1,
+      "residual_energy": 0.009713537847272358,
+      "residual_variance": 0.015714111360585648,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": 0.0,
+      "feasible": true,
+      "local_cost": 1.7623534326113615e-05,
+      "energy": -0.4417487457928958,
+      "variance": 2.8464635930264963,
+      "global_infidelity": 0.00037346332140375527,
+      "parameters": 24,
+      "raw_cx": 32,
+      "rounds": 3,
+      "history": [
+        {
+          "iterations": 16,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 90,
+          "success": false,
+          "message": "Positive directional derivative for linesearch"
+        },
+        {
+          "iterations": 11,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 11,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.15000000000000002,
+      "residual_energy": 0.0099440523865435,
+      "residual_variance": 0.016435327820172763,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": 0.0,
+      "feasible": true,
+      "local_cost": 7.801739046972363e-05,
+      "energy": -0.39719283646162273,
+      "variance": 2.8380566397115317,
+      "global_infidelity": 0.000890396877865296,
+      "parameters": 29,
+      "raw_cx": 38,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 17,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 17,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.2,
+      "residual_energy": 0.009511511618455426,
+      "residual_variance": 0.017874746270790887,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": 0.0,
+      "feasible": true,
+      "local_cost": 2.493217790164078e-05,
+      "energy": -0.3598305609287036,
+      "variance": 2.825402269295888,
+      "global_infidelity": 0.0011180383755041712,
+      "parameters": 40,
+      "raw_cx": 48,
+      "rounds": 3,
+      "history": [
+        {
+          "iterations": 28,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 200,
+          "success": false,
+          "message": "Iteration limit reached"
+        },
+        {
+          "iterations": 8,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 14,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.25,
+      "residual_energy": 0.006978239533721564,
+      "residual_variance": 0.019999989996486,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": 0.0,
+      "feasible": true,
+      "local_cost": 6.765037402505805e-05,
+      "energy": -0.33280055160871835,
+      "variance": 2.809136171231482,
+      "global_infidelity": 0.0017437876595931545,
+      "parameters": 40,
+      "raw_cx": 48,
+      "rounds": 1,
+      "history": [
+        {
+          "iterations": 25,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 56,
+          "success": true,
+          "message": "Optimization terminated successfully"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.3,
+      "residual_energy": 0.007594327634499798,
+      "residual_variance": 0.018180529412072044,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": 0.0,
+      "feasible": true,
+      "local_cost": 8.498100565245171e-05,
+      "energy": -0.31169221642048467,
+      "variance": 2.786893863361753,
+      "global_infidelity": 0.0027892632608632617,
+      "parameters": 47,
+      "raw_cx": 50,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 21,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 200,
+          "success": false,
+          "message": "Iteration limit reached"
+        },
+        {
+          "iterations": 54,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.35000000000000003,
+      "residual_energy": 0.008629635675194314,
+      "residual_variance": 0.008524638209090885,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": 0.0,
+      "feasible": true,
+      "local_cost": 7.918192517202155e-05,
+      "energy": -0.29925504931074187,
+      "variance": 2.7569726578868448,
+      "global_infidelity": 0.003703238707162715,
+      "parameters": 53,
+      "raw_cx": 54,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 38,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 29,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.4,
+      "residual_energy": 0.00880045947553243,
+      "residual_variance": 0.0028888909580597755,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": 0.0,
+      "feasible": true,
+      "local_cost": 4.9578020287013774e-05,
+      "energy": -0.2960202911726413,
+      "variance": 2.7335894664722584,
+      "global_infidelity": 0.004361141787143308,
+      "parameters": 61,
+      "raw_cx": 70,
+      "rounds": 3,
+      "history": [
+        {
+          "iterations": 24,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 31,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 28,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.45,
+      "residual_energy": 0.009627557904274386,
+      "residual_variance": -0.003320723766994771,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 9.67913615844204e-05,
+      "energy": -0.2991627467061734,
+      "variance": 2.7150779981457127,
+      "global_infidelity": 0.005816625451399604,
+      "parameters": 61,
+      "raw_cx": 70,
+      "rounds": 1,
+      "history": [
+        {
+          "iterations": 32,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.5,
+      "residual_energy": 0.01040187004632237,
+      "residual_variance": -0.0038581303864506644,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 2.525326849221087e-05,
+      "energy": -0.3075176144071719,
+      "variance": 2.71071125813988,
+      "global_infidelity": 0.0062451774500803525,
+      "parameters": 70,
+      "raw_cx": 84,
+      "rounds": 3,
+      "history": [
+        {
+          "iterations": 26,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 30,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 30,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.55,
+      "residual_energy": 0.012181198647793434,
+      "residual_variance": -0.003723551797083058,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 6.522770498186468e-05,
+      "energy": -0.3180579083781746,
+      "variance": 2.718116286626645,
+      "global_infidelity": 0.007463497082976889,
+      "parameters": 70,
+      "raw_cx": 84,
+      "rounds": 1,
+      "history": [
+        {
+          "iterations": 34,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.6000000000000001,
+      "residual_energy": 0.01303070973512338,
+      "residual_variance": -0.009232887214110974,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 9.120663808208693e-05,
+      "energy": -0.33062418326444537,
+      "variance": 2.7345641692887606,
+      "global_infidelity": 0.00904937820666829,
+      "parameters": 77,
+      "raw_cx": 86,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 41,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 33,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.6500000000000001,
+      "residual_energy": 0.013325122076263018,
+      "residual_variance": -0.011616491745658486,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 9.399319191030775e-05,
+      "energy": -0.3430423841584876,
+      "variance": 2.7717938483575804,
+      "global_infidelity": 0.010379041908766151,
+      "parameters": 82,
+      "raw_cx": 92,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 43,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 28,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.7000000000000001,
+      "residual_energy": 0.014101487189803141,
+      "residual_variance": -0.019921130087052763,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 8.140281793086162e-05,
+      "energy": -0.3529040221813171,
+      "variance": 2.8220280107694626,
+      "global_infidelity": 0.011777631506929898,
+      "parameters": 88,
+      "raw_cx": 96,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 75,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 62,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.7500000000000001,
+      "residual_energy": 0.017074320912987606,
+      "residual_variance": -0.019999990000825196,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 9.959965363045805e-05,
+      "energy": -0.3574987857129679,
+      "variance": 2.898224558471984,
+      "global_infidelity": 0.013321440181581767,
+      "parameters": 94,
+      "raw_cx": 100,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 174,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 200,
+          "success": false,
+          "message": "Iteration limit reached"
+        },
+        {
+          "iterations": 104,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 144,
+          "success": true,
+          "message": "Optimization terminated successfully"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.8,
+      "residual_energy": 0.017877169357525313,
+      "residual_variance": -0.019999959333337092,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 1.6582225132253387e-05,
+      "energy": -0.3607588478693066,
+      "variance": 2.9895766145763005,
+      "global_infidelity": 0.013703822234919616,
+      "parameters": 109,
+      "raw_cx": 118,
+      "rounds": 4,
+      "history": [
+        {
+          "iterations": 200,
+          "success": false,
+          "message": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 200,
+          "success": false,
+          "message": "Iteration limit reached"
+        },
+        {
+          "iterations": 188,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 200,
+          "success": false,
+          "message": "Iteration limit reached"
+        },
+        {
+          "iterations": 163,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 200,
+          "success": false,
+          "message": "Iteration limit reached"
+        },
+        {
+          "iterations": 121,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 200,
+          "success": false,
+          "message": "Iteration limit reached"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.8500000000000001,
+      "residual_energy": 0.019120184541365215,
+      "residual_variance": -0.01999999088645943,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 3.8167288583508045e-05,
+      "energy": -0.3601394808251461,
+      "variance": 3.0916934588798135,
+      "global_infidelity": 0.014485963471078,
+      "parameters": 116,
+      "raw_cx": 120,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 138,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 200,
+          "success": false,
+          "message": "Iteration limit reached"
+        },
+        {
+          "iterations": 126,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 200,
+          "success": false,
+          "message": "Iteration limit reached"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.9000000000000001,
+      "residual_energy": 0.019999990017841585,
+      "residual_variance": -0.01999998978798523,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 7.163315644926799e-05,
+      "energy": -0.3568954831488367,
+      "variance": 3.1990928732523765,
+      "global_infidelity": 0.01593362517373198,
+      "parameters": 116,
+      "raw_cx": 120,
+      "rounds": 1,
+      "history": [
+        {
+          "iterations": 200,
+          "success": false,
+          "message": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 200,
+          "success": false,
+          "message": "Iteration limit reached"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 0.9500000000000001,
+      "residual_energy": 0.01999998999832664,
+      "residual_variance": -0.019999989917418137,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 9.526790170748625e-05,
+      "energy": -0.3522928567624962,
+      "variance": 3.305837412127977,
+      "global_infidelity": 0.017496799575325017,
+      "parameters": 121,
+      "raw_cx": 126,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 200,
+          "success": false,
+          "message": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 200,
+          "success": false,
+          "message": "Iteration limit reached"
+        },
+        {
+          "iterations": 172,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 200,
+          "success": false,
+          "message": "Iteration limit reached"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 1.0,
+      "residual_energy": 0.01999998982838408,
+      "residual_variance": -0.019999990355280328,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 9.312611563652598e-05,
+      "energy": -0.34630187556745406,
+      "variance": 3.406533951360099,
+      "global_infidelity": 0.01907753193120998,
+      "parameters": 132,
+      "raw_cx": 136,
+      "rounds": 3,
+      "history": [
+        {
+          "iterations": 200,
+          "success": false,
+          "message": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 200,
+          "success": false,
+          "message": "Iteration limit reached"
+        },
+        {
+          "iterations": 163,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 200,
+          "success": false,
+          "message": "Iteration limit reached"
+        },
+        {
+          "iterations": 200,
+          "success": false,
+          "message": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 200,
+          "success": false,
+          "message": "Iteration limit reached"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 1.05,
+      "residual_energy": 0.019999982621901113,
+      "residual_variance": -0.019999977199158803,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 8.566020093729048e-05,
+      "energy": -0.33977718617883523,
+      "variance": 3.496844290564769,
+      "global_infidelity": 0.020502228097387554,
+      "parameters": 138,
+      "raw_cx": 140,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 155,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 200,
+          "success": false,
+          "message": "Iteration limit reached"
+        },
+        {
+          "iterations": 200,
+          "success": false,
+          "message": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 200,
+          "success": false,
+          "message": "Iteration limit reached"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 1.1,
+      "residual_energy": 0.019826990891807672,
+      "residual_variance": -0.019990348524403956,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 7.595507850162062e-05,
+      "energy": -0.3335582389957018,
+      "variance": 3.574080847044061,
+      "global_infidelity": 0.021635689166162653,
+      "parameters": 142,
+      "raw_cx": 148,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 90,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 200,
+          "success": false,
+          "message": "Iteration limit reached"
+        },
+        {
+          "iterations": 149,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 1.1500000000000001,
+      "residual_energy": 0.01997897252916636,
+      "residual_variance": -0.019552870262105948,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 8.445297028660274e-05,
+      "energy": -0.32765712770047145,
+      "variance": 3.63719369435988,
+      "global_infidelity": 0.023007755503679617,
+      "parameters": 146,
+      "raw_cx": 156,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 200,
+          "success": false,
+          "message": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 200,
+          "success": false,
+          "message": "Iteration limit reached"
+        },
+        {
+          "iterations": 109,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 1.2000000000000002,
+      "residual_energy": 0.019813919985135375,
+      "residual_variance": -0.019978380440015542,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 5.999133138767201e-05,
+      "energy": -0.323040786046862,
+      "variance": 3.684799044721661,
+      "global_infidelity": 0.024394497809755777,
+      "parameters": 152,
+      "raw_cx": 160,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 91,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 200,
+          "success": false,
+          "message": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 1.2500000000000002,
+      "residual_energy": 0.01999999000096414,
+      "residual_variance": -0.01999999000476471,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 7.15645252533724e-05,
+      "energy": -0.31918774078790746,
+      "variance": 3.7196172845931494,
+      "global_infidelity": 0.025910762641151552,
+      "parameters": 157,
+      "raw_cx": 166,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 149,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 200,
+          "success": false,
+          "message": "Iteration limit reached"
+        },
+        {
+          "iterations": 96,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 200,
+          "success": false,
+          "message": "Iteration limit reached"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 1.3,
+      "residual_energy": 0.019991331910101995,
+      "residual_variance": -0.018120635655358264,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 7.05902444453775e-05,
+      "energy": -0.31662931679001716,
+      "variance": 3.745310371232941,
+      "global_infidelity": 0.02779410777332425,
+      "parameters": 162,
+      "raw_cx": 172,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 173,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 200,
+          "success": false,
+          "message": "Iteration limit reached"
+        },
+        {
+          "iterations": 62,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 1.35,
+      "residual_energy": 0.019960194005318954,
+      "residual_variance": -0.016530184122686364,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 5.852992629986636e-05,
+      "energy": -0.3150622028246386,
+      "variance": 3.7625850410608868,
+      "global_infidelity": 0.02924434373107887,
+      "parameters": 167,
+      "raw_cx": 178,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 61,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 58,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 1.4000000000000001,
+      "residual_energy": 0.01992415457960567,
+      "residual_variance": -0.011085743181187713,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 5.1930417183546456e-05,
+      "energy": -0.3142554804658357,
+      "variance": 3.778400731506749,
+      "global_infidelity": 0.030145136152589402,
+      "parameters": 173,
+      "raw_cx": 182,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 75,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 76,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3736
+    },
+    {
+      "time": 1.4500000000000002,
+      "residual_energy": 0.019605201092839086,
+      "residual_variance": -0.004805249801451694,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 8.268283394277941e-05,
+      "energy": -0.3142368309632192,
+      "variance": 3.7920490877083535,
+      "global_infidelity": 0.0316114769614414,
+      "parameters": 173,
+      "raw_cx": 182,
+      "rounds": 1,
+      "history": [
+        {
+          "iterations": 99,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3581
+    },
+    {
+      "time": 1.5000000000000002,
+      "residual_energy": 0.019292050749801948,
+      "residual_variance": -0.0042979037102486295,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 7.249539775135033e-05,
+      "energy": -0.31449348062102755,
+      "variance": 3.7981958118558583,
+      "global_infidelity": 0.03230735321757716,
+      "parameters": 178,
+      "raw_cx": 188,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 93,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 54,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3326
+    },
+    {
+      "time": 1.55,
+      "residual_energy": 0.018838234073237425,
+      "residual_variance": -0.01405406425236011,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 8.255750792879935e-05,
+      "energy": -0.3149927568082561,
+      "variance": 3.792461128120175,
+      "global_infidelity": 0.032512447755575824,
+      "parameters": 182,
+      "raw_cx": 196,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 90,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 24,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 2996
+    },
+    {
+      "time": 1.6,
+      "residual_energy": 0.01873408050455927,
+      "residual_variance": -0.019999989975505894,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 9.493548029108589e-05,
+      "energy": -0.3151229714370005,
+      "variance": 3.7879783775503038,
+      "global_infidelity": 0.03342318578338688,
+      "parameters": 186,
+      "raw_cx": 204,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 153,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 200,
+          "success": false,
+          "message": "Iteration limit reached"
+        },
+        {
+          "iterations": 55,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 200,
+          "success": false,
+          "message": "Iteration limit reached"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 2820
+    },
+    {
+      "time": 1.6500000000000001,
+      "residual_energy": 0.018726095439635104,
+      "residual_variance": -0.01998860934684199,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 6.948965621863764e-05,
+      "energy": -0.315086870981379,
+      "variance": 3.785087239116606,
+      "global_infidelity": 0.03447614545718203,
+      "parameters": 192,
+      "raw_cx": 208,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 134,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 200,
+          "success": false,
+          "message": "Iteration limit reached"
+        },
+        {
+          "iterations": 200,
+          "success": false,
+          "message": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 2996
+    },
+    {
+      "time": 1.7000000000000002,
+      "residual_energy": 0.01857950908803957,
+      "residual_variance": -0.019999990107689936,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 9.784901466866886e-05,
+      "energy": -0.31513592428615994,
+      "variance": 3.7754769629084493,
+      "global_infidelity": 0.03593841618871163,
+      "parameters": 192,
+      "raw_cx": 208,
+      "rounds": 1,
+      "history": [
+        {
+          "iterations": 200,
+          "success": false,
+          "message": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 200,
+          "success": false,
+          "message": "Iteration limit reached"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3326
+    },
+    {
+      "time": 1.7500000000000002,
+      "residual_energy": 0.01914469276721853,
+      "residual_variance": -0.019999990140049384,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 8.654813988162072e-05,
+      "energy": -0.3144873558914516,
+      "variance": 3.75683991656066,
+      "global_infidelity": 0.037051226845987384,
+      "parameters": 203,
+      "raw_cx": 218,
+      "rounds": 3,
+      "history": [
+        {
+          "iterations": 169,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 200,
+          "success": false,
+          "message": "Iteration limit reached"
+        },
+        {
+          "iterations": 164,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 200,
+          "success": false,
+          "message": "Iteration limit reached"
+        },
+        {
+          "iterations": 117,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 200,
+          "success": false,
+          "message": "Iteration limit reached"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3696
+    },
+    {
+      "time": 1.8,
+      "residual_energy": 0.019753747288865253,
+      "residual_variance": -0.019999990181724048,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 9.296056899609533e-05,
+      "energy": -0.3139145719118266,
+      "variance": 3.727317454009555,
+      "global_infidelity": 0.038229139103058696,
+      "parameters": 208,
+      "raw_cx": 224,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 109,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 185,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 200,
+          "success": false,
+          "message": "Iteration limit reached"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3736
+    },
+    {
+      "time": 1.85,
+      "residual_energy": 0.01998723097035454,
+      "residual_variance": -0.017796818889397326,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 6.257409082669218e-05,
+      "energy": -0.3139489800033376,
+      "variance": 3.688217663734597,
+      "global_infidelity": 0.03883120739762436,
+      "parameters": 213,
+      "raw_cx": 230,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 200,
+          "success": false,
+          "message": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 200,
+          "success": false,
+          "message": "Iteration limit reached"
+        },
+        {
+          "iterations": 95,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 1.9000000000000001,
+      "residual_energy": 0.019961945092761835,
+      "residual_variance": -0.013465768905162712,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 8.845784776072217e-05,
+      "energy": -0.3145678773396005,
+      "variance": 3.639679086554434,
+      "global_infidelity": 0.039439110014260814,
+      "parameters": 213,
+      "raw_cx": 230,
+      "rounds": 1,
+      "history": [
+        {
+          "iterations": 81,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 1.9500000000000002,
+      "residual_energy": 0.019986730043934142,
+      "residual_variance": -0.010546767585753791,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 8.2755830953838e-05,
+      "energy": -0.3155211864041524,
+      "variance": 3.5796711494016313,
+      "global_infidelity": 0.03988037916171827,
+      "parameters": 217,
+      "raw_cx": 238,
+      "rounds": 2,
+      "history": [
+        {
+          "iterations": 105,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "phase": "hard_budget_polish",
+          "iterations": 200,
+          "success": false,
+          "message": "Iteration limit reached"
+        },
+        {
+          "iterations": 58,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    },
+    {
+      "time": 2.0,
+      "residual_energy": 0.01998250825707293,
+      "residual_variance": -0.007358627736212764,
+      "penalty": 0.0,
+      "derivative_energy": 0.0,
+      "derivative_variance": -0.0,
+      "feasible": true,
+      "local_cost": 4.12143781952101e-05,
+      "energy": -0.3169336587509458,
+      "variance": 3.512736775680955,
+      "global_infidelity": 0.04044007979255648,
+      "parameters": 227,
+      "raw_cx": 250,
+      "rounds": 3,
+      "history": [
+        {
+          "iterations": 72,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 52,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        {
+          "iterations": 101,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      ],
+      "K_terms": 207,
+      "K2_terms": 3744
+    }
+  ],
+  "failure": null,
+  "elapsed": 563.4682681560516
+}

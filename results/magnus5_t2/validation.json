@@ -1,0 +1,41 @@
+{
+  "hermiticity": "passed",
+  "static_limit": "passed",
+  "quadrature": "passed",
+  "Magnus_state_errors": [
+    1.346166873927158e-05,
+    1.050302308391006e-07,
+    8.293647447144041e-10
+  ],
+  "gradient": [
+    {
+      "index": 0,
+      "error": 3.134462716047892e-07
+    },
+    {
+      "index": 9,
+      "error": 2.1089948987196294e-07
+    },
+    {
+      "index": 16,
+      "error": 5.378458851623691e-07
+    },
+    {
+      "index": 24,
+      "error": 2.562663397043252e-07
+    },
+    {
+      "index": 35,
+      "error": 1.1155802326356934e-07
+    },
+    {
+      "index": 44,
+      "error": 1.778077489689167e-07
+    }
+  ],
+  "rejected_commit": "passed",
+  "hard_constraint_jacobian": "passed",
+  "qiskit_echo": "passed",
+  "moment_parameter_shift": "passed",
+  "zero_penalty_regression": "passed"
+}

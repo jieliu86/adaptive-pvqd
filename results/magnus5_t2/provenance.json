@@ -1,0 +1,31 @@
+{
+  "repository_head": "16e5318b104a1163a6c2e00ab8b0fa6257b757f9",
+  "new_sources_sha256": {
+    "moment_constraints.py": "906c4268180b2a43a919081f08f8294f11ed61a5a89fb75437055495e4836420",
+    "moment_statevector.py": "736144e75c9a56741bac55e092b276bf4aceb782589f954761c7c85d63eb14cf",
+    "run_moment_apvqd.py": "844f56ef3526e41dcf8709b93bd8f757da2eee457561dfbc4dc43b717a1d662a",
+    "analyze_moment_apvqd.py": "f0323f5812b6764356166be771dfadb6c2d47734bb057c1d9522f1704df71b96",
+    "tests/check_magnus_moments.py": "d2e4b993886fe193d75664fe66db0b2f14f80f0b9e794273e6a9d13c8893ee32"
+  },
+  "experiments": {
+    "baseline": "midpoint Suzuki2 reps2; L-BFGS-B; no moments enforced",
+    "penalty": "dE=dV=.002, lambdaE=lambdaV=.01; L-BFGS-B plus SLSQP hard-budget polish",
+    "penalty_loose": "dE=dV=.02, lambdaE=lambdaV=.01; same constrained method"
+  },
+  "end_time": 2,
+  "dt": 0.05,
+  "shots": null,
+  "backend": "exact statevector; no hardware execution",
+  "partial_attempts": "soft_only stopped at t=.2 on a hard violation; *_slow_partial were interrupted for an equivalent feasible-set polishing objective; not final comparisons",
+  "versions": {
+    "numpy": "1.23.5",
+    "scipy": "1.10.1",
+    "qiskit": "{'qiskit-terra': '0.24.2', 'qiskit-aer': '0.12.2', 'qiskit-ignis': None, 'qiskit-ibmq-provider': None, 'qiskit': '0.43.3', 'qiskit-nature': None, 'qiskit-finance': None, 'qiskit-optimization': None, 'qiskit-machine-learning': None}"
+  },
+  "default_budget": 0.02,
+  "tight_budget_status": {
+    "completed": false,
+    "last_accepted_time": 0.6500000000000001,
+    "reason": "Exploratory tight-budget run stopped for computational cost after >6 minutes; not an infeasibility conclusion."
+  }
+}
